@@ -3,17 +3,43 @@
  <head>
     <title>승아의 영화 사이트</title>
     <meta charset="utf=8">
-    <style>
-        h1{
-           color: cornflowerblue;
-           text-align: center;
-           font-size: 100px;
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function a() {
+            alert("환영합니다.")
+            location.href='main.html'
         }
-    </style>
+    </script>
 </head>
 <body>
-<h1>승아의 영화 사이트</h1>
-<h1 style="color: cadetblue; text-align: center;
-font-size: 50px;">환영합니다</h1>
+<h1>승아의 영화 사이트</a></h1>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>회원가입 페이지</title>
+<link href="signup.css" rel="stylesheet">
+<script src="signup.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="title"><h1 style="font-size: 21px;"></h1></div>
+    <div class="email">
+        <input id="email" type="text" placeholder="이메일을 입력해 주세요.">
+        <div id="emailError" class="error"></div>
+    </div>
+    <div class="password">
+        <input id="password" type="password" placeholder="비밀번호를 입력해 주세요.">
+        <div id="passwordError" class="error"></div>
+    </div>
+
+        <div id="areaError" class="error"></div>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+<div class="signup">
+    <button  onclick="a()">로그인</button>
+    <button  onclick="location.href='signup.html'">회원가입</button>
+     </div>
 </body>
 </html>
